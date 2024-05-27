@@ -1,0 +1,333 @@
+/*
+Theme Name:  Salient
+Description: Styles for the "Icon List" page builder element.
+*/
+
+.nectar-icon-list{
+    position:relative
+}
+ .nectar-icon-list:after{
+    display:block;
+     position:absolute;
+     content:' ';
+     z-index:1;
+     width:1px;
+     background-color:rgba(0,0,0,0.1);
+     height:100%;
+     top:15px;
+     left:15px
+}
+ .nectar-icon-list >div:last-child{
+    margin-bottom:15px
+}
+ .row .nectar-icon-list .nectar-icon-list-item h4{
+    line-height:30px;
+     margin-bottom:4px
+}
+ .nectar-icon-list-item{
+    position:relative;
+     margin-bottom:80px;
+     padding-left:60px
+}
+ .nectar-icon-list[data-icon-size="medium"] .nectar-icon-list-item{
+    padding-left:100px
+}
+ .nectar-icon-list[data-icon-size="medium"][data-icon-style="no-border"] .nectar-icon-list-item{
+    padding-left:80px
+}
+ .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item{
+    padding-left:120px
+}
+ .nectar-icon-list[data-icon-size="large"][data-icon-style="no-border"] .nectar-icon-list-item{
+    padding-left:100px
+}
+ .nectar-icon-list-item .content{
+    color:rgba(0,0,0,0.5)
+}
+ .span_12.light .nectar-icon-list-item .content{
+    color:rgba(255,255,255,0.65)
+}
+ .span_12.light .nectar-icon-list:after{
+    background-color:rgba(255,255,255,0.15)
+}
+ .nectar-icon-list-item .list-icon-holder{
+    border-radius:100px;
+     background-color:#f7f7f7;
+     text-align:center;
+     position:absolute;
+     left:0;
+     top:0;
+     color:rgba(0,0,0,0.5);
+     z-index:10
+}
+ .nectar-icon-list[data-icon-style="border"] .list-icon-holder{
+    border:2px solid rgba(0,0,0,0.1)
+}
+ .span_12.light .nectar-icon-list[data-icon-style="border"] .nectar-icon-list-item .list-icon-holder{
+    border:2px solid rgba(255,255,255,0.3)
+}
+ .nectar-icon-list[data-icon-style="no-border"] .list-icon-holder,
+ .nectar-icon-list[data-icon-color="default"][data-icon-style="no-border"] .list-icon-holder,
+ .span_12.light .nectar-icon-list[data-icon-color="default"][data-icon-style="no-border"] .list-icon-holder{
+    border:none;
+    background-color:transparent
+}
+ .nectar-icon-list[data-icon-style="no-border"]:after{
+    display:none
+}
+ .nectar-icon-list .nectar-icon-list-item .list-icon-holder i:before{
+    line-height:inherit
+}
+
+.nectar-icon-list .nectar-icon-list-item .list-icon-holder .im-icon-wrap,
+.nectar-icon-list .nectar-icon-list-item .list-icon-holder .im-icon-wrap > span { 
+  margin-left: -1px; 
+  margin-top: -2px; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.nectar-icon-list .nectar-icon-list-item .list-icon-holder .im-icon-wrap > span {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nectar-icon-list .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg { 
+  display: inline-block; 
+}
+
+ .nectar-icon-list[data-icon-size="small"] .nectar-icon-list-item .list-icon-holder, 
+ .nectar-icon-list[data-icon-size="small"] .nectar-icon-list-item .list-icon-holder span, 
+ .nectar-icon-list[data-icon-size="small"] .nectar-icon-list-item .list-icon-holder i{
+    line-height:30px;
+     font-size:16px;
+     width:30px;
+     height:30px
+}
+.nectar-icon-list[data-icon-size="small"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg {
+  width:20px;
+  height:20px;
+}
+ .nectar-icon-list[data-icon-size="small"] .nectar-icon-list-item .list-icon-holder i{
+    line-height:26px!important
+}
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="small"] .nectar-icon-list-item .list-icon-holder, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="small"] .nectar-icon-list-item .list-icon-holder span, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="small"] .nectar-icon-list-item .list-icon-holder i, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="small"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg{
+    line-height:30px;
+     font-size:30px
+}
+ .nectar-icon-list[data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder, 
+ .nectar-icon-list[data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder span, 
+ .nectar-icon-list[data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder i {
+    line-height:60px;
+     font-size:26px;
+     width:60px;
+     height:60px
+}
+.nectar-icon-list[data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg {
+  width:30px;
+  height:30px;
+}
+ .nectar-icon-list[data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder i{
+    line-height:56px
+}
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder i, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="medium"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg {
+    line-height:45px;
+     font-size:45px;
+     width:45px;
+     height:45px
+}
+ .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder, 
+ .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder span, 
+ .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder i {
+    line-height:80px;
+     font-size:36px;
+     width:80px;
+     height:80px
+}
+
+.nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg {
+  width:40px;
+  height:40px;
+}
+ .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder i{
+    line-height:76px
+}
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder span, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder i, 
+ .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg{
+    line-height:60px;
+     font-size:60px;
+     width:60px;
+     height:60px
+}
+ .nectar-icon-list[data-icon-size="medium"]:after{
+    top:30px;
+     left:30px
+}
+ .nectar-icon-list[data-icon-size="large"]:after{
+    top:40px;
+     left:40px
+}
+ body .nectar-icon-list-item .list-icon-holder >span{
+    display:block;
+     letter-spacing:0!important;
+     margin-top:-2px;
+     margin-left:-2px
+}
+ .nectar-icon-list[data-icon-color="default"] .list-icon-holder{
+    background-color:#f7f7f7
+}
+ .span_12.light .nectar-icon-list[data-icon-color="default"] .list-icon-holder{
+    background-color:#222;
+     color:rgba(255,255,255,0.8)
+}
+ .span_12.dark .nectar-icon-list[data-icon-color="default"] .list-icon-holder i{
+    color:inherit
+}
+ .span_12.light .nectar-icon-list[data-icon-color="default"] .list-icon-holder i{
+    color:rgba(255,255,255,0.7)
+}
+ .span_12.dark .nectar-icon-list[data-icon-color="default"] .list-icon-holder .im-icon-wrap path {
+     fill: rgba(0,0,0,0.5);
+}
+ .span_12.light .nectar-icon-list[data-icon-color="default"] .list-icon-holder .im-icon-wrap path {
+     fill: #fff;
+}
+ .nectar-icon-list .list-icon-holder .im-icon-wrap {
+     margin-top: 0;
+     margin-left: 0;
+}
+ .nectar-icon-list[data-animate="true"] .list-icon-holder{
+    transform:scale(0.3);
+     -webkit-transform:scale(0);
+     -ms-transform:scale(0);
+     opacity:0;
+     -webkit-backface-visibility:hidden
+}
+ .nectar-icon-list[data-animate="true"] .nectar-icon-list-item.animated .list-icon-holder{
+    transform:scale(1);
+     -webkit-transform:scale(1);
+     -ms-transform:scale(1);
+     opacity:1;
+     transition:transform 0.6s,opacity 0.2s;
+     -webkit-transition:-webkit-transform 0.6s,opacity 0.2s
+}
+ .nectar-icon-list[data-animate="true"]:after{
+    transform:scale(1,0) translateZ(0);
+     -webkit-transform:scale(1,0) translateZ(0);
+     -ms-transform:scale(1,0) translateZ(0);
+     transform-origin:top;
+     -webkit-transform-origin:top;
+     -webkit-backface-visibility:hidden
+}
+ .nectar-icon-list[data-animate="true"].completed:after{
+    transform:scale(1,1) translateZ(0);
+     -webkit-transform:scale(1,1) translateZ(0);
+     -ms-transform:scale(1,1) translateZ(0);
+     transition:transform 1.9s cubic-bezier(0.18,1,0.32,1);
+     -webkit-transition:-webkit-transform 1.9s cubic-bezier(0.18,1,0.32,1)
+}
+ .nectar-icon-list[data-animate="true"] .content{
+    opacity:0;
+     transform:translateX(60px) translateZ(0);
+     -webkit-transform:translateX(60px) translateZ(0);
+     -ms-transform:translateX(60px) translateZ(0);
+     -webkit-backface-visibility:hidden
+}
+ .nectar-icon-list[data-animate="true"] .nectar-icon-list-item.animated .content{
+    opacity:1;
+     transform:translateX(0px) translateY(0px) translateZ(0);
+     -webkit-transform:translateX(0px) translateY(0px) translateZ(0);
+     -ms-transform:translateX(0px) translateY(0px) translateZ(0);
+     transition:transform .7s cubic-bezier(0.165,0.84,0.44,1) 0.2s,opacity .7s cubic-bezier(0.165,0.84,0.44,1) 0.2s;
+     -webkit-transition:-webkit-transform .7s cubic-bezier(0.165,0.84,0.44,1) 0.2s,opacity .7s cubic-bezier(0.165,0.84,0.44,1) 0.2s
+}
+ .nectar-icon-list[data-direction="horizontal"]:after {
+     display: none;
+}
+ .nectar-icon-list[data-direction="horizontal"] {
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-wrap: wrap;
+     flex-wrap: wrap;
+     width: calc(105%);
+}
+ .nectar-icon-list[data-direction="horizontal"] .nectar-icon-list-item {
+     width: calc(33.3% - 5%);
+     margin: 0 5% 5% 0;
+}
+ .nectar-icon-list[data-direction="horizontal"][data-columns="2"] .nectar-icon-list-item {
+     width: calc(50% - 5%);
+     margin: 0 5% 5% 0;
+}
+ .nectar-icon-list[data-direction="horizontal"][data-columns="4"] .nectar-icon-list-item {
+     width: calc(25% - 5%);
+     margin: 0 5% 5% 0;
+}
+ .nectar-icon-list[data-direction="horizontal"][data-columns="5"] .nectar-icon-list-item {
+     width: calc(20% - 5%);
+     margin: 0 5% 5% 0;
+}
+ .nectar-icon-list[data-direction="horizontal"][data-columns="1"] .nectar-icon-list-item {
+     width: 100%;
+     margin: 0 0% 5% 0;
+}
+ @media only screen and (max-width: 999px) {
+     .nectar-icon-list[data-direction="horizontal"][data-columns] .nectar-icon-list-item {
+         width: calc(50% - 5%);
+         margin: 0 5% 5% 0;
+    }
+     .nectar-icon-list[data-direction="horizontal"][data-columns="1"] .nectar-icon-list-item {
+         width: 100%;
+         margin: 0 0% 5% 0;
+    }
+}
+ @media only screen and (max-width: 690px) {
+     .nectar-icon-list[data-direction="horizontal"][data-columns] .nectar-icon-list-item {
+         width: 100%;
+         margin: 0 0% 10% 0;
+    }
+}
+ @media only screen and (max-width : 690px) {
+     .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder,
+     .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder i,
+     .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder span {
+         line-height: 60px;
+         font-size: 26px;
+         width: 60px;
+         height: 60px;
+    }
+    .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg {
+      width: 30px;
+      height: 30px;
+    }
+     .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder,
+     .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder i,
+     .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder span {
+         line-height: 45px;
+         font-size: 45px;
+         width: 45px;
+         height: 45px;
+    }
+    .nectar-icon-list[data-icon-style="no-border"][data-icon-size="large"] .nectar-icon-list-item .list-icon-holder .im-icon-wrap svg {
+      width: 36px;
+      height: 36px;
+    }
+     .nectar-icon-list[data-icon-size="large"] .nectar-icon-list-item {
+         padding-left: 100px;
+    }
+     .nectar-icon-list[data-icon-size="large"][data-icon-style="no-border"] .nectar-icon-list-item {
+         padding-left: 80px;
+    }
+     .nectar-icon-list[data-icon-size="large"]:after {
+         top: 30px;
+         left: 30px;
+    }
+}

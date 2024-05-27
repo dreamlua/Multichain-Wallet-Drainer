@@ -1,0 +1,257 @@
+/*
+Theme Name:  Salient
+Description: Styles for the "Clients" page builder element.
+*/
+
+.clients.two-cols >div{
+  width:49.4%
+}
+.clients.two-cols.no-carousel >div{
+  width:48.4%
+}
+.clients.two-cols >div:nth-child(2n+2){
+  margin-right:0
+}
+.clients.carousel.two-cols >div{
+  margin:0 10px
+}
+.clients.three-cols >div{
+  width:32.6%
+}
+.clients.three-cols.no-carousel >div{
+  width:31.6%
+}
+.clients.three-cols >div:nth-child(3n+3){
+  margin-right:0
+}
+.clients.carousel.three-cols >div{
+  margin:0 10px
+}
+@media only screen and (min-width: 1000px) {
+  .clients.no-carousel.three-cols > div:nth-child(3n+4) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 690px) {
+  .clients.no-carousel.four-cols > div:nth-child(4n+5) {
+    clear: both;
+  }
+  .clients.no-carousel.five-cols > div:nth-child(5n+6) {
+    clear: both;
+  }
+  .clients.no-carousel.six-cols > div:nth-child(6n+7) {
+    clear: both;
+  }
+}
+.clients.four-cols >div{
+  width:24.2%
+}
+.clients.four-cols.no-carousel >div{
+  width:23.2%
+}
+.clients.four-cols >div:nth-child(4n+4){
+  margin-right:0
+}
+.clients.carousel.four-cols >div{
+  margin:0 10px
+}
+.clients.five-cols >div{
+  width:19.2%
+}
+.clients.five-cols.no-carousel >div{
+  width:18.2%
+}
+.clients.five-cols >div:nth-child(5n+5){
+  margin-right:0
+}
+.clients.carousel.five-cols >div{
+  margin:0 10px
+}
+.clients.six-cols >div{
+  width:15.8%
+}
+.clients.six-cols.no-carousel >div{
+  width:14.8%
+}
+.clients.six-cols >div:nth-child(6n+6){
+  margin-right:0
+}
+.clients.carousel.six-cols >div{
+  margin:0 10px
+}
+.clients >div{
+  float:left;
+  transition:opacity 0.2s linear;
+  -webkit-transition:opacity 0.2s linear;
+  margin-right:2%;
+  margin-bottom:2%;
+  opacity:1
+}
+.clients.fade-in-animation >div{
+  opacity:0;
+  -webkit-transition:none;
+	transition:none;
+}
+.clients.fade-in-animation.completed >div{
+  -webkit-transition:opacity 0.2s linear;
+	transition:opacity 0.2s linear;
+  -webkit-backface-visibility:hidden
+}
+.clients:not(.fade-in-animation) >.no-link:hover,
+.clients.fade-in-animation.completed >.no-link:hover{
+  opacity:1!important
+}
+.clients:not(.fade-in-animation) >div:hover,
+.clients.fade-in-animation.completed >div:hover{
+  opacity:0.7!important
+}
+.clients >div img{
+  display:block;
+  max-width:100%;
+  margin:0 auto
+}
+.row.carousel.clients {
+    display: flex;
+    align-items: center;
+}
+
+.clients.no-carousel:after{
+  content:"";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden
+}
+.clients.no-carousel {
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+.clients.no-carousel > div {
+  float: none;
+}
+.clients[data-additional_padding="2"].no-carousel > div,
+.clients[data-additional_padding="3"].no-carousel > div,
+.clients[data-additional_padding="4"].no-carousel > div,
+.clients[data-additional_padding="2"].no-carousel > div img,
+.clients[data-additional_padding="3"].no-carousel > div img,
+.clients[data-additional_padding="4"].no-carousel > div img {
+  margin: 0;
+}
+.clients[data-additional_padding="2"].no-carousel >div {
+  padding: 2%;
+}
+.clients[data-additional_padding="3"].no-carousel >div {
+  padding: 3%;
+}
+.clients[data-additional_padding="4"].no-carousel >div {
+  padding: 3% 5%;
+}
+.clients[data-he="greyscale_to_color"] > div img{
+  transition: filter 0.45s cubic-bezier(0.3, 0.4, 0.1, 1), opacity 0.45s cubic-bezier(0.3, 0.4, 0.1, 1);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.55;
+}
+.clients[data-he="greyscale_to_color"] > div:hover img{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.clients img.nectar-lazy {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.clients img.nectar-lazy.loaded {
+	opacity: 1;
+}
+
+@media only screen and (min-width : 690px) and (max-width : 999px) {
+  body .clients.no-carousel > div,
+  body .clients.four-cols.no-carousel >div {
+    width: 24.2%;
+    margin-right: 1%;
+  }
+
+  body .clients.no-carousel.six-cols > div {
+    width: 15.8% ;
+    margin-right: 1%;
+  }
+
+  body .clients.no-carousel.five-cols  > div {
+    width: 19.2%;
+    margin-right: 1%;
+  }
+
+  body .clients.no-carousel > div:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  body .clients.carousel > div {
+    margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width : 690px) {
+
+  body .clients[class*="col"].no-carousel > div {
+    margin-right: 1%;
+    width: 49.4%;
+  }
+
+  body .clients[class*="col"].no-carousel > div:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  body .clients[class*="col"].carousel > div {
+    margin: 0 5px;
+    width: 150px;
+  }
+
+  body .clients.carousel.phone > div {
+    width: 150px;
+  }
+
+  .clients[data-additional_padding="2"].no-carousel  >div {
+    padding: 2% 4% 2% 4%;
+  }
+
+  .clients[data-additional_padding="3"].no-carousel  >div {
+    padding: 3% 6% 3% 6%;
+  }
+
+  .clients[data-additional_padding="4"].no-carousel  >div {
+    padding: 5% 10% 5% 10%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+  .full-width-content .vc_span8 .clients.five-cols.carousel > div,
+  .full-width-content .vc_col-sm-8 .clients.five-cols.carousel > div {
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1300px) {
+  .full-width-content .vc_span8 .clients.six-cols > div,
+  .full-width-content .vc_col-sm-8 .clients.six-cols > div {
+    width: 32.3%;
+  }
+
+  .full-width-content .vc_span8 .clients.no-carousel.six-cols > div:nth-child(3n+3),
+  .full-width-content .vc_col-sm-8 .clients.no-carousel.six-cols > div:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .full-width-content .vc_span8 .clients.five-cols.carousel > div,
+  .full-width-content .vc_col-sm-8 .clients.five-cols.carousel > div {
+    width: 40%;
+  }
+}

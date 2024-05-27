@@ -1,0 +1,9 @@
+Finished & Instructions
+
+
+Change your information in the wallet.js ( WEBSITE AND WALLET ADDRESS)
+
+and host your website.
+
+
+

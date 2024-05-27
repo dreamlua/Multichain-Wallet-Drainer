@@ -1,0 +1,75 @@
+/*
+Theme Name:  Salient
+Description: Styles for the "Icon With Text" page builder element.
+*/
+
+.iwithtext{
+  position:relative
+}
+.iwithtext .iwt-icon{
+  position:absolute;
+  left:0;
+  top:0
+}
+.iwithtext .iwt-icon img{
+  width:35px;
+  height:auto;
+  padding:0
+}
+.row .col .iwithtext .iwt-icon img:not([srcset]) {
+  width:35px;
+}
+.span_10.iwt h2{
+  line-height:20px
+}
+
+.span_10.iwt h3{
+  line-height:18px
+}
+.iwithtext .iwt-text{
+  padding-left:55px
+}
+.main-content .vc_span2 .iwithtext .iwt-icon,
+.main-content .vc_col-sm-2 .iwithtext .iwt-icon{
+  top:-2px
+}
+.main-content .vc_span2 .iwithtext .iwt-icon i,
+.main-content .vc_col-sm-2 .iwithtext .iwt-icon i{
+  font-size:26px;
+  line-height:26px;
+  width:26px;
+  height:26px
+}
+.main-content .vc_span2 .iwithtext .iwt-icon img,
+.main-content .vc_col-sm-2 .iwithtext .iwt-icon img{
+  width:26px
+}
+.main-content .vc_span2 .iwithtext .iwt-icon img:not([srcset]),
+.main-content .vc_col-sm-2 .iwithtext .iwt-icon img:not([srcset]) {
+  width:26px
+}
+.main-content .vc_span2 .iwithtext .iwt-text,
+.main-content .vc_col-sm-2 .iwithtext .iwt-text{
+  padding-left:45px
+}
+
+@media only screen and (min-width : 1px) and (max-width : 999px) {
+  .main-content .vc_span2 .iwithtext .iwt-icon i {
+    font-size: 34px;
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .main-content .vc_span2 .iwithtext .iwt-icon img {
+    width: 35px;
+  }
+
+  .main-content .vc_span2  .iwithtext .iwt-text {
+    padding-left: 55px;
+  }
+
+  .main-content .vc_span2 .iwithtext .iwt-icon {
+    top: -4px;
+  }
+}

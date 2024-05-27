@@ -1,0 +1,599 @@
+/*
+Theme Name: Salient Child Theme
+Description: This is a custom child theme for Salient
+Theme URI:   https://themeforest.net/item/salient-responsive-multipurpose-theme/4363266
+Author: ThemeNectar
+Author URI:  https://themeforest.net/user/themenectar
+Template: salient
+Version: 1.0
+*/
+#label-email-67a926ab-fc40-4c82-adea-48050074f239 {
+		display: none;
+	}
+.inputs-list .hs-error-msg li {
+	color: #000000;
+}
+
+/* Janky workaround to replace Telegram social media icon with something prettier */
+/* Commenting this out for now
+.fa-telegram:before {
+    opacity: 0;
+}
+i.fa-telegram {
+    background: url(http://moonbeam-stage.purestake.com/wp-content/uploads/2020/07/telegram-logo-777.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+	background-position: center;
+    display: inline-block;
+}
+i.fa-telegram:hover {
+    background: url(http://moonbeam-stage.purestake.com/wp-content/uploads/2020/07/telegram-logo-fff.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+	background-position: center;
+    display: inline-block;
+}
+*/
+
+/* Making the WhatsApp logo into a Reddit logo */
+.fa-whatsapp:before {
+    opacity: 0;
+}
+i.fa-whatsapp {
+    background: url(../../../../moonbeam-stage.purestake.com/wp-content/uploads/2020/08/reddit-small-777.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+	background-position: center;
+    display: inline-block;
+}
+i.fa-whatsapp:hover {
+    background: url(../../../../moonbeam-stage.purestake.com/wp-content/uploads/2020/08/reddit-small-white.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+	background-position: center;
+    display: inline-block;
+}
+
+/* Announcements page font changes */
+/* old, commenting out
+.press-release-links .nectar-hor-list-item[data-columns="2"][data-column-layout=small_first]>div:nth-child(1) {
+	font-size: 12px !important;
+	font-weight: 600;
+	color: #5C6B73;
+	text-transform: uppercase;
+}
+*/
+
+.press-release-links .excerpt {
+	display: none;
+}
+.press-release-links .post-header .meta {
+	font-size: 11px;
+	margin-bottom: 2px;
+}
+.press-release-links .post-header h3 {
+	font-size: 16px;
+	margin: 0px;
+	line-height: 22px;
+}
+.press-release-links .blog-recent[data-style=minimal] .col {
+   padding: 2px;
+   margin-bottom: 3%;
+}
+.press-release-links .post-header, #single-below-header {
+    margin-bottom: 2px;
+}
+
+/* Fix the white space issue in the shape divider */
+.divider-row .nectar-shape-divider-wrap {
+    left: -2px !important;
+    width: 100.5% !important;
+}
+
+/* Modify spacing for roadmap list */
+.nectar-icon-list-item {
+margin-bottom: 40px;
+}
+
+
+/* General Form */
+.container-wrap input[type="text"],.container-wrap textarea,.container-wrap input[type="email"],.container-wrap input[type="password"],.container-wrap input[type="tel"],.container-wrap input[type="url"],.container-wrap input[type="search"],.container-wrap input[type="date"] {
+ font-size:12px!important;
+ padding: 8px;
+}
+
+.wpb_wrapper form > fieldset.form-columns-1 div div.input textarea {
+    width: 100%;
+}
+.wpb_wrapper form > fieldset.form-columns-1 div div.input select {
+    width: 100%;
+}
+.wb_wrapper form > fieldset.form-columns-2 div div.input input {
+    width: 100%;
+}
+.wpb_wrapper form > fieldset.form-columns-1 div div.input input[type="text"] {
+    width: 100%;
+}
+.wpb_wrapper form > fieldset.form-columns-1 div div.input input[type="email"] {
+    width: 100%;
+}
+.wpb_wrapper form > fieldset.form-columns-1 div div.input input[type="tel"] {
+    width: 100%;
+}
+.actions {
+ text-align: center;
+}
+.wpb_wrapper form > fieldset select {
+    border: 1px solid #cfcfcf !important;
+    box-shadow: none !important;
+}
+input, textarea {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom:.5em;
+}
+select {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main-content ul.inputs-list li {
+    list-style: none;
+}
+
+.textwidget .actions {
+    text-align: left;
+}
+.widget form {
+	padding-bottom: 30px;
+}
+.widget input[type="submit"] {
+	font-size:12px;
+	color: #fff;
+	}
+.widget .hbspt-form input[type='submit'] {
+	margin-top: 0em;
+}
+.hs-form-field {
+ padding-bottom: 15px;
+}
+input[type="select"] {
+    background-color: #ffffff;
+    border: solid 1px #ccc !important;
+}
+.newsletter-inline .hs-form .hs-form-field {
+	float:left;
+	max-width:100% !important;
+	width:65%;
+	vertical-align:middle;
+	padding-right: 15px;
+}
+form.hs-form div.hs_submit div.actions input[type="submit"] {
+    width:33.33%;
+	margin-top: 3px;
+}
+.hs-form-checkbox span {
+	padding-left: 5px;
+}
+.newsletter-inline .hs-form .hs_submit .actions input[type="submit"] {
+   color: #fff !important;
+}
+
+/* Contact Us Form */	
+.contact-us-form input, textarea, select {
+    margin-top: 0.75em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+	background-color: transparent;
+	}
+.contact-us-form body[data-fancy-form-rcs="1"] input[type="checkbox"].hs-input {
+    height: 28px;
+    position: relative;
+    left: .5em;
+    margin-right: 1em;
+    top: 3px;
+}	
+.contact-us-form body[data-form-submit="regular"] .container-wrap input[type=submit], body[data-form-submit="see-through"] .container-wrap button[type=submit] {
+	padding: 8px 20px!important;
+	}
+.contact-us-form body {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+}
+.contact-us-form .hs-form .hs_submit .actions input[type="submit"] {
+	color: #fff !important;
+}
+
+/* Ambassador Application */
+.ambassador-app .hs-form .hs-form-field .hs_submit {
+	text-align: center;
+}
+.ambassador-app .hs-form fieldset {
+	max-width: 1000px;
+}
+.ambassador-app body, label span, input {
+	color: #444 !important;
+}
+.ambassador-app strong {
+	font-family: 'Varela Round' !important;
+}
+.ambassador-app .hs-form .hs_submit .actions input[type="submit"] {
+    margin-top: 20px;
+	color: #fff !important;
+}
+
+/* Small Project Section on the Community Page */
+.project-mini-preview .portfolio-items .col .work-info .vert-center {
+    display: none;
+}
+
+/* Customizing Blog Thumbnail Section */
+.masonry.classic_enhanced .masonry-blog-item .article-content-wrap, .blog-recent[data-style*=classic_enhanced] .article-content-wrap {
+    padding: 7% !important;
+}
+
+/* Top Nav, modifying button to external Foundation website */
+#top nav>ul>li[class*=external-link]>a:before {
+    border-color: #ffffff;
+}
+
+/* Custom Theming to style code snippets*/
+code[class*=language-],pre[class*=language-]{
+	color:#ccc;background:none;
+	font-size:12px;
+	text-align:left;
+	white-space:pre;
+	word-spacing:normal;
+	word-break:normal;
+	word-wrap:normal;
+	line-height:16px;
+	-moz-tab-size:4;
+	-o-tab-size:4;
+	tab-size:4;
+	-webkit-hyphens:none;
+	-ms-hyphens:none;
+	hyphens:none
+	}
+	pre[class*=language-]{
+		margin:.5em 0;
+		overflow:auto
+		}
+	:not(pre)>code[class*=language-],pre[class*=language-]{
+		background:#2d2d2d
+		}
+	:not(pre)>code[class*=language-]{
+		padding:.1em;
+		border-radius:.3em;
+		white-space:normal
+		}
+	.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{
+			color:#999
+			}
+	.token.punctuation{
+		color:#ccc
+		}
+	.token.attr-name,.token.deleted,.token.namespace,.token.tag{
+		color:#e2777a
+		}
+	.token.function-name{
+		color:#6196cc
+		}
+	.token.boolean,.token.function,.token.number{
+		color:#f08d49
+		}
+	.token.class-name,.token.constant,.token.property,.token.symbol{
+		color:#f8c555
+		}
+	.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{
+		color:#cc99cd
+		}
+	.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{
+		color:#7ec699
+		}
+	.token.entity,.token.operator,.token.url{
+		color:#67cdcc
+		}
+	.token.bold,.token.important{
+		font-weight:700
+		}
+	.token.italic{
+		font-style:italic
+		}
+	.token.entity{
+		cursor:help
+		}
+	.token.inserted{
+		color:green
+		}
+	.home .feature h2,.home .feature p,.home .hero .description{
+		color:#2c3e50;
+		opacity:.75
+		}
+	.theme-default-content code{
+		color:#476582;
+		padding:.25rem .5rem;
+		margin:0;
+		font-size:.85em;
+		background-color:rgba(27,31,35,.05);
+		border-radius:3px
+		}
+	.theme-default-content code .token.deleted{
+		color:#ec5975
+		}
+	.theme-default-content code .token.inserted{
+		color:#fd8824
+		}
+	.theme-default-content pre,.theme-default-content pre[class*=language-]{
+		line-height:1.4;
+		padding:1.25rem 1.5rem;
+		margin:.85rem 0;
+		background-color:#282c34;
+		border-radius:6px;
+		overflow:auto
+		}
+	.theme-default-content pre[class*=language-] code,.theme-default-content pre code{
+		color:#fff;
+		padding:0;
+		background-color:transparent;
+		border-radius:0
+	}
+	div[class*=language-]{
+		position:relative;
+		background-color:#282c34;
+		border-radius:6px
+		}
+	div[class*=language-] .highlight-lines{
+		-webkit-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+		padding-top:1.3rem;
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		line-height:1.4
+		}
+	div[class*=language-] .highlight-lines .highlighted{
+		background-color:rgba(0,0,0,.66)
+		}
+	div[class*=language-] pre,div[class*=language-] pre[class*=language-]{
+		background:transparent;
+		position:relative;z-index:1
+		}
+	div[class*=language-]:before{
+		position:absolute;
+		z-index:3;
+		top:.8em;
+		right:1em;
+		font-size:.75rem;
+		color:hsla(0,0%,100%,.4)
+		}
+	div[class*=language-]:not(.line-numbers-mode) .line-numbers-wrapper{
+		display:none
+		}
+	div[class*=language-].line-numbers-mode .highlight-lines .highlighted{
+		position:relative
+		}
+	div[class*=language-].line-numbers-mode .highlight-lines .highlighted:before{
+		content:" ";
+		position:absolute;
+		z-index:3;
+		left:0;
+		top:0;
+		display:block;
+		width:3.5rem;
+		height:100%;
+		background-color:rgba(0,0,0,.66)
+		}
+	div[class*=language-].line-numbers-mode pre{
+		padding-left:4.5rem;
+		vertical-align:middle
+		}
+	div[class*=language-].line-numbers-mode .line-numbers-wrapper{
+		position:absolute;
+		top:0;
+		width:3.5rem;
+		text-align:center;
+		color:hsla(0,0%,100%,.3);
+		padding:1.25rem 0;
+		line-height:1.4
+		}
+	div[class*=language-].line-numbers-mode .line-numbers-wrapper .line-number,div[class*=language-].line-numbers-mode .line-numbers-wrapper br{
+		-webkit-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none
+		}
+	div[class*=language-].line-numbers-mode .line-numbers-wrapper .line-number{
+		position:relative;
+		z-index:4;
+		font-size:.85em
+		}
+	div[class*=language-].line-numbers-mode:after{
+		content:"";
+		position:absolute;
+		z-index:2;
+		top:0;
+		left:0;
+		width:3.5rem;
+		height:100%;
+		border-radius:6px 0 0 6px;
+		border-right:1px solid rgba(0,0,0,.66);
+		background-color:#282c34
+		}
+	div[class~=language-js]:before{content:"js"}
+	div[class~=language-ts]:before{content:"ts"}
+	div[class~=language-html]:before{content:"html"}
+	div[class~=language-md]:before{content:"md"}
+	div[class~=language-vue]:before{content:"vue"}
+	div[class~=language-css]:before{content:"css"}
+	div[class~=language-sass]:before{content:"sass"}
+	div[class~=language-scss]:before{content:"scss"}
+	div[class~=language-less]:before{content:"less"}
+	div[class~=language-stylus]:before{content:"stylus"}
+	div[class~=language-go]:before{content:"go"}
+	div[class~=language-java]:before{content:"java"}
+	div[class~=language-c]:before{content:"c"}
+	div[class~=language-sh]:before{content:"sh"}
+	div[class~=language-yaml]:before{content:"yaml"}
+	div[class~=language-py]:before{content:"py"}
+	div[class~=language-docker]:before{content:"docker"}
+	div[class~=language-dockerfile]:before{content:"dockerfile"}
+	div[class~=language-makefile]:before{content:"makefile"}
+	div[class~=language-javascript]:before{content:"js"}
+	div[class~=language-typescript]:before{content:"ts"}
+	div[class~=language-markup]:before{content:"html"}
+	div[class~=language-markdown]:before{content:"md"}
+	div[class~=language-json]:before{content:"json"}
+	div[class~=language-ruby]:before{content:"rb"}
+	div[class~=language-python]:before{content:"py"}
+	div[class~=language-bash]:before{content:"sh"}
+	div[class~=language-php]:before{content:"php"}
+
+
+ /* Fix code snippet scrolling */
+
+ pre code {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	margin-bottom: 0em;
+	padding: 0em;
+	line-height: 20px;
+}
+
+.main_color a, .main_color strong a {
+    color: #f16522;
+}
+.main_color strong {
+    color: inherit;
+}
+
+/* Illuminate Event Styling */
+.illuminate-event .event-description {
+    font-size: 1em !important;
+	padding: 0 100px 20px 100px;
+}
+.illuminate-event .event-title {
+    font-size: 1.2em !important;
+	padding: 0 0 2px 0;
+}
+.illuminate-event .event-subtitle {
+    font-size: 1em !important;
+	padding: 0 0 0 0;
+}
+.illuminate-event p {
+	padding-bottom: 2px;
+}
+
+/* Fix portfolio grid (partners page) on mobile */
+@media only screen and (max-width: 690px)  {
+    .portfolio-items:not(.carousel) .col.span_4, .portfolio-items:not(.carousel) .col.span_3 {
+        width: 45.8%!important;
+        margin: 2%!important;
+    }
+}
+
+/* Moonriver launch table styling */
+.launch-table tr {
+    vertical-align: baseline;
+}
+.launch-table td {
+    padding: 10px;
+    font-size: 15px !important;
+    line-height: 20px !important;
+}
+
+/* Header navigation styling for megamenu */
+.menu-column-header {
+	font-weight: 700 !important;
+	font-size: 12px;
+}
+
+.sf-menu>li li>a>.nectar-menu-icon {
+	color: #ffffff !important;
+	top: 3px !important;
+	vertical-align: bottom !important;
+}
+
+/* Secondary header for crowdloan announcement */
+#header-secondary-outer {
+	background-color: #E1147B !important;
+}
+#header-secondary-outer nav>ul>li>a, #header-secondary-outer .nectar-center-text, #header-secondary-outer .nectar-center-text a, body #header-secondary-outer nav>ul>li>a .sf-sub-indicator i, #header-secondary-outer #social li a i, #header-secondary-outer[data-lhe=animated_underline] nav>.sf-menu>li:hover>a, #header-outer #mobile-menu .secondary-header-text p, #header-secondary-outer b {
+	color: #000000 !important;
+}
+
+/* Team page customizations*/
+.team-grid h4 {
+    font-size:15px;
+}
+.team-grid .position {
+    font-size:12px;
+}
+.team-grid img {
+    border: 5px solid #070707;
+}
+.team-grid .team-member:hover {
+    opacity: 0.4 !important;
+    transition: opacity .8s cubic-bezier(.2,1,.2,1);
+    -webkit-transition: opacity .8s cubic-bezier(.2,1,.2,1);
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    opacity: .5 !important;
+}
+.team-grid .full-width-content .vc_span4 .team-member[data-style="meta_overlaid"] .team-member-image, .full-width-content .vc_col-sm-4 .team-member[data-style="meta_overlaid"] .team-member-image, .full-width-content .vc_span4 .team-member[data-style="meta_overlaid_alt"] .team-member-image, .full-width-content .vc_col-sm-4 .team-member[data-style="meta_overlaid_alt"] .team-member-image {
+    height: 500px !important;
+}
+.disclaimer {
+    font-size: 11px;
+    text-align: center; 
+    line-height: 12px;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+/* Remove dumb nectar love button that's supposed to be disabled */
+.nectar-social {
+    display: none;
+}
+/* Style block quote for use in blogs */
+blockquote {
+	margin: 40px 20px 20px 20px;
+    padding: 20px;
+	line-height: 30px;
+}
+.blockquote {
+    max-width: 500px;
+	float: right;
+    color: #000000;
+}
+.blockquote p:first-child:first-letter {
+  float: left;
+  font-family: 'Varela Round', 'Open Sans', sans-serif;
+  font-size: 60px;
+  line-height: 50px;
+  padding: 6px 14px 4px 0;
+}
+.blockquote p {
+    font-size: 18px;
+	color: #242A2E;
+	font-style: italic;
+}
+/* Custom definition highlight highlights */
+.definition {
+	padding-bottom: 30px;
+}
+.definition-highlight {
+	background: #F9D0E4;
+}
+span.term {
+	font-weight: bold;
+}

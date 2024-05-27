@@ -1,0 +1,154 @@
+/*
+Theme Name:  Salient
+Description: Styles for the "Highlighted Text" page builder element.
+*/
+
+.nectar-highlighted-text em {
+  position: relative;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  line-height: 1em;
+  padding: 0 3px;
+}
+
+.nectar-highlighted-text[class*="font_size_"] em {
+	line-height: inherit;
+}
+
+
+
+.nectar-highlighted-text:not([data-style="text_outline"]) em {
+    background-repeat: no-repeat;
+    background-size: 0% 80%;
+    background-image: linear-gradient(to right, #000000 0%, #000000 100%);
+    transition: background-size 0.9s cubic-bezier(.15,.75,.4,1), opacity 0.25s ease;
+    background-position: left 90%;
+}
+
+
+.nectar-highlighted-text[data-exp="closer"][data-style="full_text"] em { 
+  background-size: 0% 70%;
+  background-position: left 65%;
+}
+.nectar-highlighted-text[data-exp="closer"][data-style="full_text"] em.animated {
+  background-size: 100% 70%;
+}
+.nectar-highlighted-text[data-exp="closest"][data-style="full_text"] em { 
+  background-size: 0% 60%;
+  background-position: left 65%;
+}
+.nectar-highlighted-text[data-exp="closest"][data-style="full_text"] em.animated {
+  background-size: 100% 60%;
+}
+
+
+.nectar-highlighted-text[data-style="full_text"] em {
+  background-position: left 70%;
+}
+
+
+.nectar-highlighted-text[data-style="regular_underline"] a em {
+	-webkit-transition: color 0.9s cubic-bezier(.15,.75,.4,1), background-size 0.9s cubic-bezier(.15,.75,.4,1);
+	transition: color 0.9s cubic-bezier(.15,.75,.4,1), background-size 0.9s cubic-bezier(.15,.75,.4,1);
+}
+
+.nectar-highlighted-text[data-style="regular_underline"] a:hover em,
+.nectar-highlighted-text[data-style="regular_underline"] em.has-link:hover {
+	color: #fff;
+}
+.nectar-highlighted-text[data-style="regular_underline"][data-color="#ffffff"] a:hover em,
+.nectar-highlighted-text[data-style="regular_underline"][data-color="#ffffff"] em.has-link:hover {
+	color: #000;
+}
+
+
+.nectar-highlighted-text[data-style="regular_underline"] em,
+.nectar-highlighted-text[data-style="full_text"] em,
+.nectar-highlighted-text[data-style="half_text"] em {
+  display: inline;
+}
+
+.nectar-highlighted-text[data-style="half_text"] em {
+  background-size: 0% 28%;
+}
+.nectar-highlighted-text[data-style="half_text"] em.animated {
+  background-size: 100% 28%;
+}
+.nectar-highlighted-text[data-style="half_text"] a:hover em.animated {
+  background-size: 100% 14%;
+}
+
+.nectar-highlighted-text[data-style="regular_underline"] em {
+  background-image: linear-gradient(to right, #000000 0%, #000000 100%), linear-gradient(to right, #000000 0%, #000000 100%);
+}
+
+
+.nectar-highlighted-text[data-style="regular_underline"] em {
+	padding: 0;
+}
+
+
+.nectar-highlighted-text em.animated {
+  background-size: 100% 80%;
+}
+
+
+.nectar-highlighted-text[data-using-custom-color="false"] em:before {
+  opacity: 0.3;
+}
+@media only screen and (max-width: 999px) {
+  body:not([data-m-animate="1"]) .nectar-highlighted-text em.animated {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.nectar-highlighted-text a {
+  color: inherit;
+}
+
+.nectar-highlighted-text[data-style="full_text"] a:hover em.animated {
+  opacity: 0.75;
+}
+
+.nectar-highlighted-text[data-style="text_outline"] em:before {
+	display: none;
+}
+.nectar-highlighted-text[data-style="text_outline"] em{
+	-webkit-text-stroke-color: inherit;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+}
+.nectar-highlighted-text[data-style="text_outline"] a em {
+	transition: transform 0.3s ease;
+	transform-origin: left bottom;
+}
+.nectar-highlighted-text[data-style="text_outline"] a:hover em {
+	-webkit-text-fill-color: initial;
+	-webkit-text-stroke-color: rgba(0,0,0,0);
+	transform: skewX(-10deg);
+}
+
+.nectar-highlighted-text[data-style][data-user-color="true"] * {
+	color: inherit;
+}
+.nectar-highlighted-text[data-style="text_outline"] em {
+	display: inline;
+	padding: 0;
+}
+.nectar-highlighted-text[data-style="text_outline"][data-outline-thickness="thin"] em {
+	-webkit-text-stroke-width: 0.015em;
+}
+.nectar-highlighted-text[data-style="text_outline"][data-outline-thickness="regular"] em {
+	-webkit-text-stroke-width: 0.02em;
+}
+.nectar-highlighted-text[data-style="text_outline"][data-outline-thickness="thick"] em {
+	-webkit-text-stroke-width: 0.03em;
+}
+.nectar-highlighted-text[data-style="text_outline"][data-outline-thickness="extra_thick"] em {
+	-webkit-text-stroke-width: 0.04em;
+}

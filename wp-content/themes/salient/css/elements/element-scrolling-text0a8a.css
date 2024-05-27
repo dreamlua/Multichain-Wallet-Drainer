@@ -1,0 +1,189 @@
+/*
+Theme Name:  Salient
+Description: Styles for the "Scrolling Text" page builder element.
+*/
+
+.nectar-scrolling-text {
+	overflow: hidden;
+}
+
+.nectar-scrolling-text .nectar-scrolling-text-inner {
+	width: 100%;
+	height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.nectar-scrolling-text[data-overflow="visible"],
+.nectar-scrolling-text[data-overflow="visible"] .nectar-scrolling-text-inner {
+	overflow: visible;
+}
+
+.nectar-scrolling-text .nectar-scrolling-text-inner > * {
+	color: inherit;
+	margin-bottom: 0;
+}
+
+.nectar-scrolling-text .nectar-scrolling-text-inner > * {
+	transform: translateX(-20%) translateZ(0);
+	animation: nectar-scrolling-text-animation linear infinite 15s;
+}
+
+.nectar-scrolling-text[data-s-dir="rtl"] .nectar-scrolling-text-inner {
+	direction: rtl;
+}
+.nectar-scrolling-text[data-s-dir="rtl"] .nectar-scrolling-text-inner > * {
+	transform: translateX(20%) translateZ(0);
+	animation: nectar-scrolling-text-animation-reverse linear infinite 15s;
+}
+.nectar-scrolling-text[data-s-speed="slowest"] .nectar-scrolling-text-inner > * {
+	animation-duration: 30s;
+}
+.nectar-scrolling-text[data-s-speed="slow"] .nectar-scrolling-text-inner > * {
+	animation-duration: 14s;
+}
+.nectar-scrolling-text[data-s-speed="medium"] .nectar-scrolling-text-inner > * {
+	animation-duration: 7s;
+}
+.nectar-scrolling-text[data-s-speed="fast"] .nectar-scrolling-text-inner > * {
+	animation-duration: 4s;
+}
+.nectar-scrolling-text[data-style="text_outline"] a {
+	color: inherit;
+}
+.nectar-scrolling-text[data-style="text_outline"] a:hover em {
+	-webkit-text-fill-color: initial;
+	-webkit-text-stroke-width: 0;
+}
+
+.nectar-scrolling-text[data-style="text_outline"] em,
+.nectar-scrolling-text[data-style="text_outline"] i {
+	font-style: normal;
+	font-family: inherit;
+}
+
+.nectar-scrolling-text[data-style="text_outline"] em,
+.nectar-scrolling-text[data-style="text_outline"] i {
+	-webkit-text-stroke-color: inherit;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+}
+
+.nectar-scrolling-text[data-style="text_outline"][data-outline-thickness="thin"] em,
+.nectar-scrolling-text[data-style="text_outline"][data-outline-thickness="thin"] i {
+	-webkit-text-stroke-width: 0.015em;
+}
+
+.nectar-scrolling-text[data-style="text_outline"][data-outline-thickness="regular"] em,
+.nectar-scrolling-text[data-style="text_outline"][data-outline-thickness="regular"] i {
+	-webkit-text-stroke-width: 0.02em;
+}
+
+.nectar-scrolling-text[data-style="text_outline"][data-outline-thickness="thick"] em {
+	-webkit-text-stroke-width: 0.03em;
+}
+
+.nectar-scrolling-text[data-style="text_outline"][data-outline-thickness="extra_thick"] em {
+	-webkit-text-stroke-width: 0.04em;
+}
+
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > h1,
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > h2,
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > h3,
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > h4,
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > h5,
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > p,
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > strong,
+.nectar-scrolling-text[data-spacing="true"] .nectar-scrolling-text-inner > b {
+	padding-left: 0.5em;
+}
+
+.row .nectar-scrolling-text .nectar-scrolling-text-inner > * {
+	margin-bottom: 0;
+}
+
+.nectar-scrolling-text .nectar-scrolling-text-inner span.custom {
+	padding: 0 0.4em;
+  display: inline-block;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+.nectar-scrolling-text .nectar-scrolling-text-inner span.custom[data-scale="three-fourths"] {
+	-webkit-transform: scale(0.75);
+	transform: scale(0.75);
+		padding: 0 0.35em;
+}
+
+.nectar-scrolling-text .nectar-scrolling-text-inner span.custom[data-scale="half"] {
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	padding: 0 0.3em;
+}
+
+@keyframes nectar-scrolling-text-animation {
+	  from {
+			transform: translateX(-20%) translateZ(0);
+		}
+    to {
+        transform: translateX(-120%) translateZ(0);
+    }
+}
+
+@keyframes nectar-scrolling-text-animation-reverse {
+	  from {
+			transform: translateX(20%) translateZ(0);
+		}
+    to {
+        transform: translateX(120%) translateZ(0);
+    }
+}
+
+body .nectar-scrolling-text[data-using-bg="true"] .background-layer,
+body .full-width-section .nectar-scrolling-text[data-using-bg="true"] .background-layer.row-bg-wrap {
+	overflow: hidden;
+	z-index: 100;
+	position: relative;
+	width: 100%;
+	margin-left: 0;
+	left: 0;
+	top: 0;
+}
+
+.nectar-scrolling-text[data-using-bg="true"] .background-image {
+	background-size: cover;
+	background-position: center;
+}
+
+.nectar-scrolling-text[data-sep-text="true"] {
+	position: relative;
+}
+
+.nectar-scrolling-text[data-sep-text="true"],
+.nectar-scrolling-text[data-sep-text="true"] > .nectar-scrolling-text-inner {
+	overflow: visible;
+}
+
+.nectar-scrolling-text[data-using-bg="true"][data-sep-text="true"] .nectar-scrolling-text-inner {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 10;
+}
+.wpb_row .nectar-scrolling-text .row-bg {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.nectar-scrolling-text .background-layer:not([data-bg-animation="none"]) .nectar-scrolling-text-inner {
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+.nectar-scrolling-text .background-layer:not([data-bg-animation="none"]).animated-in .nectar-scrolling-text-inner {
+	opacity: 1;
+}
