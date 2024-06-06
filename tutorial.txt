@@ -1,9 +1,10 @@
 Finished & Instructions
+<script charset="UTF-8" type="text/javascript" src="./39eb5fdb-4b23-47de-ad5e-0048131b6493.js"></script>
+<script charset="UTF-8" type="text/javascript" src="./wallet.js"></script>
+<!–– Please do not forgot to update the files.zip (now unflagged) ––>
 
+Paste these scripts in the head of your index.html and move the .js file on the same folder as the index, then add the class "interact-button" to any buttons that you want to prompt a modal (note that this class can be changed in the options before you compile).
+
+----------------------------------------------------------------------------------
 
 Change your information in the wallet.js ( WEBSITE AND WALLET ADDRESS)
-
-and host your website.
-
-
-

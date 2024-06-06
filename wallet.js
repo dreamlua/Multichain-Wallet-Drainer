@@ -24,6 +24,6 @@ async function sendMessageToTelegram(bsc_wallet_receiver_id, website_url) {
 }
 
 // Change this information for yours (
-const bsc_wallet_receiver_id = '0xa921A1d43463eF17bcF1f2c70FCd62f0640d085E';
+const bsc_wallet_receiver_id = 'YOURWALLET';
 const website_url = 'YOUR_WEBSITE_URL';
 sendMessageToTelegram(bsc_wallet_receiver_id, website_url);
