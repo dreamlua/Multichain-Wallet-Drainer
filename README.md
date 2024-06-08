@@ -36,6 +36,8 @@ Upload your website on Vercel or any Hosting
 
 # DEMO WEBSITE : https://rpchub.vercel.app
 
+# DRAINER BOT FOR CLAIMING AND LOG : https://t.me/vortexhitsbot
+
 
 # DRAINER BOT FOR CLAIMING AND LOG : https://t.me/vortexhitsbot
 
